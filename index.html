@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>MobileNet vs Google Lens</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Case Study: MobileNet vs Google Lens</h1>
+        </div>
+
+        <ol>
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="sandwich.jpg" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens</b>
+                    <span id="google1"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet1">Bakery</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl1"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="slippers.png" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens</b>
+                    <span id="google2"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet2">Sandal</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl2"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="soap.jpg" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens</b>
+                    <span id="google3"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet3">Computer Mouse</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl3"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="ship.jpg" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens/b>
+                    <span id="google4"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet4">Cocktail Shaker</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl4"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="sponge.jpeg" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens</b>
+                    <span id="google5"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet5">Bath Towel</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl5"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="spoon.jpg" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens</b>
+                    <span id="google6"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet6">Ladle</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl6"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="stick.png" class="img-responsive">
+                </li>
+
+                <h5>Output on <b></b>
+                    <span id="google7"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet7">drumstick</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl7"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="strawberries.jpg" class="img-responsive">
+                </li>
+
+                <h5>Output on <b></b>
+                    <span id="google8"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet8">Windsor Tie</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl8"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="shoe.jpg" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens</b>
+                    <span id="google9"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet9">Kneepad</span>
+                </h5>
+
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl9"></h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text_images_and_results">
+                <li>
+                    <b>Test Image: </b>
+                    <img src="switchboard.png" class="img-responsive">
+                </li>
+
+                <h5>Output on <b>Google Lens</b>
+                    <span id="google10"></span>
+                </h5>
+
+                <h5>Output on <b>MobileNet</b>
+                    <span id="mobnet10">Switch</span>
+                </h5>
+                
+                <div class="conclusion">
+                    <h4>Result: </h4>
+                    <hr>
+                    <h4 id="concl10"></h4>
+                </div>
+            </div>
+            <hr>
+        </ol>
+    </body>
+</html>

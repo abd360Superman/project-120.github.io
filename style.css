@@ -1,0 +1,25 @@
+body {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    background-color: plum;
+}
+.heading {
+    text-align: center;
+    background-color:turquoise;
+    padding: 15px;
+}
+ol {
+    width: 70%;
+    background-color:tomato;
+}
+img {
+    width: 80%
+}
+b {
+    font-size: 1.8em;
+}
+.conclusion {
+    text-align: center;
+    background-color:peachpuff;
+    border: 2px solid peachpuff;
+    border-radius: 20px;
+}
